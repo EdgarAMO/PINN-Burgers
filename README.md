@@ -10,10 +10,10 @@ Burgers equation solved by PINN in PyTorch
 # Procedure explained:
   - Boundary train data collected in a [100, 2] numpy array: pairs of (x, t)
   - Boundary solution data collected in a [100, 2] numpy array
-  - Collocation points come in a [10100, 2] numpy array
+  - Collocation points come in a [10100, 2] numpy array: paris of (x, t)
   - These arrays are passed to the PINN
   - These arrays are transformed into torch tensors
-  - The net is created manualy, although you should better inherit from torcn.nn.Module
+  - The net is created manualy, although you should better inherit from torch.nn.Module
   - The net takes a two-input vector and returns a one-output vector 
   - LGFGS is used to update the net gradientes (this is a full-batch prodecure)
   - Xavier initialization didn't work out for me, so I left it alone
