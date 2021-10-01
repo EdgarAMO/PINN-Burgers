@@ -15,7 +15,7 @@ Burgers equation solved by PINN in PyTorch
   - These arrays are transformed into torch tensors
   - The net is created manualy, although you should better inherit from torch.nn.Module
   - The net takes a two-input vector and returns a one-output vector 
-  - LBFGS is used to update the net gradientes (this is a full-batch prodecure)
+  - LBFGS is used to update the net's gradients (this is a full-batch prodecure)
   - Xavier initialization didn't work out for me, so I left it alone
   - The net represents the u function, f is a function of the net
   - f is the differential equation equaled to zero
